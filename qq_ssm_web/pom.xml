@@ -88,6 +88,7 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <configuration>
                     <port>8888</port>
+                    <path>/</path>
                     <!--#这里是配置tomcat的启动端口，用集群时需要对应修改；
                     <path>/</path>
                     #这里是配置项目的访问路径，默认是直接访问配置的端口；

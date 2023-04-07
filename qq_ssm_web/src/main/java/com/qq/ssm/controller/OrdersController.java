@@ -37,19 +37,4 @@ public class OrdersController {
         mv.setViewName("order-list");
         return mv;
     }
-
-    @RequestMapping(value = {"/test1", "/test2"}, method = {RequestMethod.GET, RequestMethod.POST})
-    void test() {
-
-    }
-
-    @RequestMapping(value = {"/test3"}, method = {RequestMethod.GET, RequestMethod.POST})
-    <T> T test1(Class<T> c) throws InstantiationException, IllegalAccessException {
-        return c.newInstance();
-    }
-
-    @RequestMapping(value = {"/test4"}, method = {RequestMethod.GET, RequestMethod.POST})
-    String[] test2(String[] s, int[] ints, ArrayList<Integer> list) {
-        return s;
-    }
 }
